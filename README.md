@@ -1,0 +1,1 @@
+[![Build Status](https://travis-ci.org/neubt/common.png)](https://travis-ci.org/neubt/common)
