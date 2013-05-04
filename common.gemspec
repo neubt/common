@@ -7,11 +7,11 @@ require "common/version"
 Gem::Specification.new do |s|
   s.name        = "common"
   s.version     = Common::VERSION
-  s.authors     = ["TODO: Your name"]
-  s.email       = ["TODO: Your email"]
-  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of Common."
-  s.description = "TODO: Description of Common."
+  s.authors     = ["wuwx"]
+  s.email       = ["admin@neubt.com"]
+  s.homepage    = "http://github.com/neubt/common"
+  s.summary     = "Summary of Common."
+  s.description = "Description of Common."
 
   s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.md"]
   s.test_files = Dir["test/**/*"]
