@@ -1,0 +1,13 @@
+.page-header
+  h2 Sign in
+
+= simple_form_for(resource, :as => resource_name, :url => session_path(resource_name), :html => { :class => "form-horizontal" }) do |f|
+
+  = f.input :email, :autofocus => true
+  = f.input :password
+  
+  - if devise_mapping.rememberable?
+    = f.input :remember_me, label: false, inline_label: '在这台电脑上记住我的登录状态', :as => :boolean
+
+  .form-actions
+    = f.button :submit, "登陆", class: "btn-primary"
