@@ -63,8 +63,13 @@ body {
 }
 
 .content {
+  padding: 10px;
   background: #FFF;
 }
+.content .page-header {
+  margin: 0;
+}
+
 .content .nav-tabs {
   padding-left: 10px;
 }
