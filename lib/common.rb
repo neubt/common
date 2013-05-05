@@ -3,6 +3,8 @@ require "common/engine"
 require "draper"
 require "devise"
 
+require "slim"
+
 require "bootstrap-sass"
 require "bootstrap_helper"
 
