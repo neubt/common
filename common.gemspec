@@ -21,5 +21,8 @@ Gem::Specification.new do |s|
   s.add_dependency "draper", "~> 1.2.0"
   s.add_dependency "devise", "~> 2.2.3"
 
+  s.add_dependency "bootstrap-sass", "~> 2.3.1.0"
+  s.add_dependency "bootstrap_helper", "~> 2.2.0"
+
   s.add_development_dependency "sqlite3"
 end
