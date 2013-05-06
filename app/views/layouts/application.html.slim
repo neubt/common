@@ -12,7 +12,7 @@ html
 
     .header
       .container
-        div
+        .clearfix
           .pull-right
             - if user_signed_in?
               = link_to current_user.name, main_app.user_path(current_user)
@@ -21,14 +21,14 @@ html
               = link_to 'Login', main_app.new_user_session_path
 
         = image_tag("logo.gif")
-        = render_list :class => "nav nav-tabs" do |li|
-          - li << link_to("首页", "http://bt.neu6.edu.cn")
-          
-          - if defined?(ershou)
-            - li << link_to("二手", ershou.topics_path)
-            
-          - if defined?(xiaozu)
-            - li << link_to("小组", ershou.topics_path)
+
+        .clearfix
+          = render_list :class => "nav nav-tabs pull-right" do |li|
+            - li << link_to("首页", "http://bt.neu6.edu.cn")
+            - if defined?(ershou)
+              - li << link_to("二手", ershou.topics_path)
+            - if defined?(xiaozu)
+              - li << link_to("小组", ershou.topics_path)
     
     .container
       = render_breadcrumb
