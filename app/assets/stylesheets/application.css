@@ -80,6 +80,10 @@ body {
   border-top: none;
   border-bottom: 1px solid #dddddd;
 }
+
+.footer {
+  padding: 1em 0;
+}
 .footer, .footer a {
   color: #8691A2;
 }
