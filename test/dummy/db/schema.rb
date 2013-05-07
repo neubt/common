@@ -17,6 +17,7 @@ ActiveRecord::Schema.define(:version => 20130504124947) do
     t.string   "uid"
     t.string   "provider"
     t.string   "name"
+    t.string   "avatar"
     t.datetime "created_at",                             :null => false
     t.datetime "updated_at",                             :null => false
     t.string   "email",                  :default => "", :null => false

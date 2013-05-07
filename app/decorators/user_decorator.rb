@@ -16,6 +16,8 @@ class UserDecorator < Draper::Decorator
   def avatar(size = nil)
     if provider == 'neubt'
       "http://bt.neu6.edu.cn/uc_server/avatar.php?uid=#{source.uid}&size=#{size}"
+    else
+      source.avatar.url(size)
     end
   end
 

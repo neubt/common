@@ -6,6 +6,7 @@ require "slim"
 require "simple_form"
 require "bootstrap-sass"
 require "bootstrap_helper"
+require "carrierwave"
 
 module Common
 end
