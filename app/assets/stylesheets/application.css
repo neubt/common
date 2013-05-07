@@ -89,7 +89,7 @@ body {
 }
 
 .widget {
-  padding: 10px;
+  
   .widget-header {
     padding: 0 10px 10px;
     margin: 0 -10px 10px;
@@ -136,9 +136,6 @@ body {
 }
 
 .widget {
-  h1, h2, h3, h4, h5, h6 {
-    margin: 0;
-  }
   table.table {
     margin: 0;
   }
