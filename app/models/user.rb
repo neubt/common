@@ -9,6 +9,8 @@ class User < ActiveRecord::Base
   attr_accessible :email, :password, :password_confirmation, :remember_me
   # attr_accessible :title, :body
 
+  attr_accessible :name
+
   attr_accessible :avatar
   mount_uploader :avatar, AvatarUploader
 end
