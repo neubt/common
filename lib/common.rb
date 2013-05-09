@@ -1,5 +1,6 @@
 require "common/engine"
 
+require "rails-i18n"
 require "draper"
 require "devise"
 require "slim"

@@ -17,6 +17,7 @@ Gem::Specification.new do |s|
   s.test_files = Dir["test/**/*"]
 
   s.add_dependency "rails", "~> 3.2.13"
+  s.add_dependency "rails-i18n", "~> 0.7.3"
   # s.add_dependency "jquery-rails"
   s.add_dependency "draper", "~> 1.2.0"
   s.add_dependency "devise", "~> 2.2.4"
