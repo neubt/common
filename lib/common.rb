@@ -8,6 +8,7 @@ require "simple_form"
 require "bootstrap-sass"
 require "bootstrap_helper"
 require "carrierwave"
+require "unread"
 
 module Common
 end

@@ -31,5 +31,7 @@ Gem::Specification.new do |s|
   s.add_dependency "carrierwave", "~> 0.8.0"
   s.add_dependency "mini_magick", "~> 3.5.0"
 
+  s.add_dependency "unread", "~> 0.3.0"
+
   s.add_development_dependency "sqlite3"
 end
