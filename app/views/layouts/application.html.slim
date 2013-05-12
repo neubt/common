@@ -15,12 +15,12 @@ html
         .clearfix
           .pull-right
             - if user_signed_in?
-              = link_to current_user.name, main_app.user_path(current_user)
-              = link_to 'Logout', main_app.destroy_user_session_path, :method => :delete
+              =' link_to current_user.name, main_app.user_path(current_user)
+              =' link_to 'Logout', main_app.destroy_user_session_path, :method => :delete
             - else
-              = link_to 'Login', main_app.new_user_session_path
+              =' link_to 'Login', main_app.new_user_session_path
 
-        = image_tag("logo.gif")
+        = link_to image_tag("logo.gif"), "/"
 
         .clearfix
           = render_list :class => "nav nav-tabs pull-right" do |li|
