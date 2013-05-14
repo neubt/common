@@ -34,8 +34,6 @@ html
               - li << link_to("二手", ershou.topics_path)
             - if defined?(xiaozu)
               - li << link_to("小组", ershou.topics_path)
-            - if defined?(xiaoxi)
-              - li << link_to("消息", xiaoxi.notifications_path)
     
     .container
       = render_breadcrumb
