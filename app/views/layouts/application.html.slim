@@ -21,9 +21,9 @@ html
                 - else
                   span.badge = current_user.mailbox.notifications.unread.count
               =' link_to current_user.name, main_app.user_path(current_user)
-              =' link_to 'Logout', main_app.destroy_user_session_path, :method => :delete
+              =' link_to '退出', main_app.destroy_user_session_path, :method => :delete
             - else
-              =' link_to 'Login', main_app.new_user_session_path
+              =' link_to '登录', main_app.new_user_session_path
 
         = link_to image_tag("logo.gif"), "/"
 
