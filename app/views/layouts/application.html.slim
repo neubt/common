@@ -15,6 +15,11 @@ html
         .clearfix
           .pull-right
             - if user_signed_in?
+              =' link_to xiaoxi.notifications_path do
+                - if current_user.mailbox.notifications.unread.count > 0
+                  span.badge.badge-important = current_user.mailbox.notifications.unread.count
+                - else
+                  span.badge = current_user.mailbox.notifications.unread.count
               =' link_to current_user.name, main_app.user_path(current_user)
               =' link_to 'Logout', main_app.destroy_user_session_path, :method => :delete
             - else
@@ -29,6 +34,8 @@ html
               - li << link_to("二手", ershou.topics_path)
             - if defined?(xiaozu)
               - li << link_to("小组", ershou.topics_path)
+            - if defined?(xiaoxi)
+              - li << link_to("消息", xiaoxi.notifications_path)
     
     .container
       = render_breadcrumb

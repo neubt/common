@@ -15,4 +15,7 @@ class User < ActiveRecord::Base
   mount_uploader :avatar, AvatarUploader
 
   acts_as_reader
+  
+  def notify(*subject)
+  end
 end
